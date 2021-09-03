@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;700&display=swap');
+/* font-family: 'Baloo 2', cursive;  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo 2', cursive;
+}
+body{
+    background: linear-gradient(50deg,#30363d,#000);
+    height: 100vh;
+    color: #fff;
+}
+.container{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    bottom: 10%;
+    left: 10%;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: scroll 70s linear infinite;
+    background: url('assets/p404.png'), #30363d;
+    
+    box-shadow: 0 15px 30px rgba(0,0,0,.5);
+}
+.container .p404{
+    max-width: auto;
+    text-align: center;
+}
+.container .p404 h2{
+    font-size: 17vw;
+    line-height: 12vw;
+    margin: 2vh;
+}
+.container .p404 h4{
+    font-size: 3vw;
+    background: #c51d4a;
+    padding: .5vw 3vw;
+    display: inline-block;
+    border-radius: 3vw;
+    box-shadow: 0 .5vw 30px rgba(0,0,0,.5);
+}
+.container .p404 p{
+    font-size: 2vw;
+    align-items: center;
+    padding: 0 10vw;
+    margin: 2vh;
+}
+.container .p404 a{
+    position: relative;
+    display: inline-block;
+    padding: 10px 25px;
+    background: #000;
+    font-size: 1.7vw;
+    text-decoration: none;
+    border-radius: 3vw;
+    color: #fff;
+    padding: .5vw 2vw;
+    transition: all .3s ease;
+}
+.container .p404 a i{
+    transform: translateY(5%);
+}
+.container .p404 a:hover{
+    font-size: 1.75vw;
+}
+@keyframes scroll {
+    100%{
+        background-position:3000px 3000px;
+    }
+}
+ 
